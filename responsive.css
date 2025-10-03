@@ -1,0 +1,1067 @@
+/* ===== التصميم المتجاوب للهواتف والأجهزة اللوحية ===== */
+
+/* الأجهزة اللوحية (768px فأقل) */
+@media (max-width: 768px) {
+    /* التخطيط العام */
+    .main-content {
+        grid-template-columns: 1fr;
+        gap: var(--space-md);
+        padding: 0 var(--space-md);
+        margin: var(--space-lg) auto;
+    }
+
+    /* الهيدر */
+    .header {
+        padding: var(--space-md);
+    }
+
+    .nav {
+        flex-direction: column;
+        gap: var(--space-md);
+    }
+
+    .logo {
+        font-size: var(--font-size-lg);
+    }
+
+    .user-section {
+        gap: var(--space-md);
+    }
+
+    /* التبويبات */
+    .tabs-container {
+        top: 120px;
+    }
+
+    .tabs {
+        padding: 0 var(--space-md);
+        gap: 0;
+    }
+
+    .tab {
+        padding: var(--space-md) var(--space-lg);
+        font-size: var(--font-size-sm);
+        flex: 1;
+        min-width: 0;
+        justify-content: center;
+    }
+
+    .tab i {
+        font-size: var(--font-size-base);
+    }
+
+    /* البطاقات */
+    .card {
+        padding: var(--space-lg);
+        margin-bottom: var(--space-md);
+    }
+
+    .card-header {
+        flex-direction: column;
+        gap: var(--space-md);
+        align-items: flex-start;
+    }
+
+    .card-header h2 {
+        font-size: var(--font-size-xl);
+    }
+
+    /* منطقة الكتابة */
+    .writing-area {
+        min-height: 300px;
+        font-size: var(--font-size-base);
+        padding: var(--space-md);
+    }
+
+    .writing-stats {
+        flex-direction: column;
+        gap: var(--space-xs);
+        align-items: flex-start;
+    }
+
+    /* أدوات الكتابة */
+    .writing-tools {
+        grid-template-columns: repeat(2, 1fr);
+        gap: var(--space-md);
+    }
+
+    .tool-card {
+        padding: var(--space-lg);
+    }
+
+    .tool-icon {
+        font-size: 2rem;
+    }
+
+    /* الأزرار */
+    .btn {
+        padding: var(--space-md) var(--space-lg);
+        font-size: var(--font-size-sm);
+    }
+
+    .btn-large {
+        padding: var(--space-lg) var(--space-xl);
+    }
+
+    /* الشبكات */
+    .grid-2,
+    .grid-3,
+    .grid-4 {
+        grid-template-columns: 1fr;
+        gap: var(--space-md);
+    }
+
+    /* مساعد الذكاء الاصطناعي */
+    .ai-actions {
+        gap: var(--space-xs);
+    }
+
+    .ai-action-btn {
+        padding: var(--space-xs) var(--space-md);
+        font-size: var(--font-size-xs);
+    }
+
+    /* المعرض */
+    .gallery {
+        grid-template-columns: repeat(auto-fill, minmax(120px, 1fr));
+        gap: var(--space-xs);
+    }
+
+    /* الاستفتاءات */
+    .poll-option {
+        padding: var(--space-sm);
+    }
+
+    /* الإشعارات */
+    .toast {
+        min-width: 250px;
+        padding: var(--space-md) var(--space-lg);
+        right: var(--space-md);
+        bottom: var(--space-md);
+    }
+
+    /* صفحة تسجيل الدخول */
+    .login-container {
+        padding: var(--space-md);
+    }
+
+    .login-form {
+        padding: var(--space-xl);
+        margin: var(--space-md);
+    }
+
+    .app-title {
+        font-size: var(--font-size-xl);
+    }
+
+    .features-list {
+        margin: var(--space-lg) 0;
+    }
+}
+
+/* الهواتف (480px فأقل) */
+@media (max-width: 480px) {
+    /* التخطيط العام */
+    .main-content {
+        padding: 0 var(--space-sm);
+        margin: var(--space-md) auto;
+    }
+
+    /* الهيدر */
+    .header {
+        padding: var(--space-sm);
+    }
+
+    .logo {
+        font-size: var(--font-size-base);
+    }
+
+    .free-badge {
+        font-size: var(--font-size-xs);
+        padding: var(--space-xs) var(--space-sm);
+    }
+
+    .user-avatar {
+        width: 40px;
+        height: 40px;
+        font-size: var(--font-size-sm);
+    }
+
+    /* التبويبات */
+    .tabs-container {
+        top: 100px;
+    }
+
+    .tabs {
+        padding: 0 var(--space-sm);
+    }
+
+    .tab {
+        padding: var(--space-sm) var(--space-md);
+        font-size: var(--font-size-xs);
+    }
+
+    .tab span {
+        display: none;
+    }
+
+    .tab i {
+        font-size: var(--font-size-lg);
+        margin: 0;
+    }
+
+    /* البطاقات */
+    .card {
+        padding: var(--space-md);
+        border-radius: var(--radius-sm);
+    }
+
+    .card-header {
+        margin-bottom: var(--space-md);
+    }
+
+    .card-header h2 {
+        font-size: var(--font-size-lg);
+    }
+
+    /* منطقة الكتابة */
+    .writing-area {
+        min-height: 250px;
+        font-size: var(--font-size-base);
+        padding: var(--space-sm);
+        border-radius: var(--radius-sm);
+    }
+
+    /* أدوات الكتابة */
+    .writing-tools {
+        grid-template-columns: 1fr;
+        gap: var(--space-sm);
+    }
+
+    .tool-card {
+        padding: var(--space-md);
+        flex-direction: row;
+        text-align: right;
+        justify-content: flex-start;
+    }
+
+    .tool-icon {
+        font-size: 1.5rem;
+        margin-bottom: 0;
+        margin-left: var(--space-sm);
+    }
+
+    /* الأزرار */
+    .btn {
+        padding: var(--space-sm) var(--space-md);
+        font-size: var(--font-size-xs);
+    }
+
+    .btn-large {
+        padding: var(--space-md) var(--space-lg);
+    }
+
+    /* مساعد الذكاء الاصطناعي */
+    .ai-assistant {
+        padding: var(--space-md);
+    }
+
+    .ai-response {
+        padding: var(--space-md);
+    }
+
+    .ai-actions {
+        justify-content: center;
+    }
+
+    .ai-action-btn {
+        flex: 1;
+        min-width: 120px;
+        justify-content: center;
+    }
+
+    /* المنشورات */
+    .post-header {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: var(--space-sm);
+    }
+
+    .post-actions {
+        gap: var(--space-md);
+        justify-content: space-between;
+    }
+
+    /* المعرض */
+    .gallery {
+        grid-template-columns: repeat(3, 1fr);
+    }
+
+    .gallery-item {
+        aspect-ratio: 1;
+    }
+
+    /* رفع الملفات */
+    .file-upload {
+        padding: var(--space-md);
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .upload-preview-item {
+        width: 80px;
+        height: 80px;
+    }
+
+    /* إدارة المستخدمين */
+    .user-management {
+        grid-template-columns: 1fr;
+    }
+
+    .user-card {
+        padding: var(--space-md);
+    }
+
+    /* الإشعارات */
+    .toast {
+        min-width: 200px;
+        padding: var(--space-sm) var(--space-md);
+        right: var(--space-sm);
+        bottom: var(--space-sm);
+        font-size: var(--font-size-sm);
+    }
+
+    /* صفحة تسجيل الدخول */
+    .login-container {
+        padding: var(--space-sm);
+    }
+
+    .login-form {
+        padding: var(--space-lg);
+        margin: var(--space-sm);
+    }
+
+    .app-title {
+        font-size: var(--font-size-lg);
+    }
+
+    .app-subtitle {
+        font-size: var(--font-size-sm);
+    }
+
+    .login-info {
+        padding: var(--space-md);
+    }
+
+    .form-group {
+        margin-bottom: var(--space-md);
+    }
+
+    .form-group input {
+        padding: var(--space-md);
+    }
+
+    .features-list {
+        margin: var(--space-md) 0;
+    }
+
+    .feature-item {
+        font-size: var(--font-size-sm);
+    }
+}
+
+/* الهواتف الصغيرة (360px فأقل) */
+@media (max-width: 360px) {
+    /* تبويبات أكثر ضغطاً */
+    .tab {
+        padding: var(--space-xs) var(--space-sm);
+    }
+
+    .tab i {
+        font-size: var(--font-size-base);
+    }
+
+    /* المعرض */
+    .gallery {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    /* أدوات الكتابة */
+    .tool-card {
+        padding: var(--space-sm);
+    }
+
+    .tool-icon {
+        font-size: 1.25rem;
+    }
+
+    /* الأزرار في مجموعات */
+    .btn-group {
+        flex-direction: column;
+        gap: var(--space-xs);
+    }
+
+    .btn-group .btn {
+        width: 100%;
+    }
+}
+
+/* ===== تحسينات للأجهزة التي بها شريط الافتراضي ===== */
+@supports(padding: max(0px)) {
+    body {
+        padding-left: min(0vmin, env(safe-area-inset-left));
+        padding-right: min(0vmin, env(safe-area-inset-right));
+        padding-bottom: min(0vmin, env(safe-area-inset-bottom));
+    }
+
+    .header {
+        padding-left: min(var(--space-lg), env(safe-area-inset-left));
+        padding-right: min(var(--space-lg), env(safe-area-inset-right));
+    }
+
+    .tabs {
+        padding-left: min(var(--space-lg), env(safe-area-inset-left));
+        padding-right: min(var(--space-lg), env(safe-area-inset-right));
+    }
+
+    .main-content {
+        padding-left: min(var(--space-lg), env(safe-area-inset-left));
+        padding-right: min(var(--space-lg), env(safe-area-inset-right));
+    }
+}
+
+/* ===== منع التكبير في الحقول على iOS ===== */
+@media screen and (max-width: 768px) {
+    input,
+    textarea,
+    select {
+        font-size: 16px; /* يمنع التكبير التلقائي في iOS */
+    }
+}
+
+/* ===== تحسينات للأجهزة العالية الدقة ===== */
+@media (min-resolution: 2dppx) {
+    .logo,
+    .tool-icon,
+    .post-avatar,
+    .user-avatar {
+        -webkit-font-smoothing: antialiased;
+        -moz-osx-font-smoothing: grayscale;
+    }
+}
+
+/* ===== الوضع الأفقي للهواتف ===== */
+@media (max-height: 500px) and (orientation: landscape) {
+    .login-container {
+        padding: var(--space-sm);
+        min-height: auto;
+        height: 100vh;
+        overflow-y: auto;
+    }
+
+    .login-form {
+        margin: var(--space-sm) 0;
+        max-width: 90%;
+    }
+
+    .app-title {
+        font-size: var(--font-size-lg);
+        margin-bottom: var(--space-xs);
+    }
+
+    .app-subtitle {
+        margin-bottom: var(--space-md);
+        font-size: var(--font-size-sm);
+    }
+
+    .login-info {
+        margin: var(--space-md) 0;
+        padding: var(--space-sm);
+    }
+
+    .form-group {
+        margin-bottom: var(--space-sm);
+    }
+
+    .features-list {
+        margin: var(--space-md) 0;
+    }
+
+    .feature-item {
+        margin-bottom: var(--space-xs);
+        font-size: var(--font-size-sm);
+    }
+}
+
+/* ===== تحسينات للأجهزة التي تدعم اللمس ===== */
+@media (hover: none) and (pointer: coarse) {
+    .btn:hover {
+        transform: none;
+    }
+
+    .tool-card:hover {
+        transform: none;
+    }
+
+    .tab:hover {
+        background: transparent;
+    }
+
+    .post-action:hover {
+        color: var(--text-light);
+    }
+
+    /* زيادة مساحة اللمس */
+    .btn {
+        min-height: 44px;
+    }
+
+    .tab {
+        min-height: 44px;
+    }
+
+    .post-action {
+        min-height: 44px;
+        padding: var(--space-xs);
+    }
+
+    .ai-action-btn {
+        min-height: 36px;
+    }
+
+    .poll-option {
+        min-height: 44px;
+    }
+}
+
+/* ===== تحسينات الأداء ===== */
+@media (prefers-reduced-motion: reduce) {
+    *,
+    *::before,
+    *::after {
+        animation-duration: 0.01ms !important;
+        animation-iteration-count: 1 !important;
+        transition-duration: 0.01ms !important;
+        scroll-behavior: auto !important;
+    }
+}
+
+/* ===== تحسينات التباين للوصول ===== */
+@media (prefers-contrast: high) {
+    :root {
+        --border: #000000;
+        --text-light: #000000;
+        --bg-light: #ffffff;
+    }
+
+    .card {
+        border: 2px solid var(--border);
+    }
+
+    .btn {
+        border: 2px solid transparent;
+    }
+
+    .btn-ghost {
+        border: 2px solid var(--border);
+    }
+}
+
+/* ===== الوضع الداكن التلقائي ===== */
+@media (prefers-color-scheme: dark) {
+    /* التأكد من أن الألوان مناسبة للوضع الداكن */
+    .login-container {
+        background: var(--gradient);
+    }
+}
+
+/* ===== الطباعة ===== */
+@media print {
+    .header,
+    .tabs-container,
+    .sidebar,
+    .btn,
+    .ai-assistant,
+    .file-upload,
+    .post-actions {
+        display: none !important;
+    }
+
+    .main-content {
+        grid-template-columns: 1fr;
+        margin: 0;
+        padding: 0;
+    }
+
+    .card {
+        box-shadow: none;
+        border: 1px solid #000;
+        margin: 0 0 20px 0;
+        page-break-inside: avoid;
+    }
+
+    .writing-area {
+        border: 1px solid #000;
+        background: white;
+        color: black;
+    }
+
+    body {
+        background: white;
+        color: black;
+        font-size: 12pt;
+        line-height: 1.4;
+    }
+
+    a {
+        color: #000;
+        text-decoration: underline;
+    }
+}
+
+/* ===== التصميم المتجاوب ===== */
+
+/* شاشات كبيرة (أجهزة سطح المكتب) */
+@media (max-width: 1200px) {
+    .main-content {
+        grid-template-columns: 1fr 300px;
+        gap: var(--space-lg);
+    }
+
+    .writing-tools {
+        grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+    }
+}
+
+/* شاشات متوسطة (أجهزة لوحية أفقية) */
+@media (max-width: 992px) {
+    .main-content {
+        grid-template-columns: 1fr;
+    }
+
+    .sidebar-section {
+        display: none;
+    }
+
+    .nav {
+        flex-wrap: wrap;
+        gap: var(--space-md);
+    }
+
+    .user-section {
+        order: 3;
+        width: 100%;
+        justify-content: center;
+    }
+
+    .grid-4 {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .writing-tools {
+        grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    }
+}
+
+/* شاشات صغيرة (أجهزة لوحية عمودية) */
+@media (max-width: 768px) {
+    :root {
+        --space-lg: 16px;
+        --space-xl: 20px;
+        --space-2xl: 32px;
+    }
+
+    .login-form {
+        padding: var(--space-xl);
+        margin: var(--space-lg);
+    }
+
+    .header {
+        padding: var(--space-md);
+    }
+
+    .tabs {
+        padding: 0 var(--space-md);
+    }
+
+    .tab {
+        padding: var(--space-md) var(--space-lg);
+        font-size: var(--font-size-sm);
+    }
+
+    .main-content {
+        padding: 0 var(--space-md);
+        margin: var(--space-lg) auto;
+    }
+
+    .card {
+        padding: var(--space-lg);
+    }
+
+    .grid-2,
+    .grid-3 {
+        grid-template-columns: 1fr;
+    }
+
+    .writing-area {
+        min-height: 300px;
+        font-size: var(--font-size-base);
+    }
+
+    .post-actions {
+        gap: var(--space-md);
+    }
+
+    .post-action {
+        font-size: var(--font-size-sm);
+    }
+
+    .toast-container {
+        right: var(--space-md);
+        bottom: var(--space-md);
+    }
+
+    .toast {
+        min-width: 250px;
+        padding: var(--space-md) var(--space-lg);
+    }
+}
+
+/* شاشات صغيرة جداً (هواتف) */
+@media (max-width: 576px) {
+    .login-container {
+        padding: var(--space-md);
+    }
+
+    .login-form {
+        padding: var(--space-lg);
+    }
+
+    .app-title {
+        font-size: var(--font-size-xl);
+        flex-direction: column;
+        gap: var(--space-xs);
+    }
+
+    .nav {
+        flex-direction: column;
+        text-align: center;
+        gap: var(--space-sm);
+    }
+
+    .user-section {
+        order: 0;
+        width: auto;
+    }
+
+    .tabs {
+        overflow-x: auto;
+        padding-bottom: var(--space-xs);
+    }
+
+    .tab {
+        padding: var(--space-md);
+        font-size: var(--font-size-xs);
+    }
+
+    .main-content {
+        margin: var(--space-md) auto;
+    }
+
+    .card {
+        padding: var(--space-md);
+        margin-bottom: var(--space-md);
+    }
+
+    .grid-4 {
+        grid-template-columns: 1fr;
+        gap: var(--space-md);
+    }
+
+    .writing-tools {
+        grid-template-columns: 1fr;
+        gap: var(--space-md);
+    }
+
+    .tool-card {
+        padding: var(--space-lg);
+    }
+
+    .btn-large {
+        padding: var(--space-lg) var(--space-xl);
+    }
+
+    .post-header {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: var(--space-sm);
+    }
+
+    .post-actions {
+        justify-content: space-around;
+    }
+
+    .ai-actions {
+        flex-direction: column;
+    }
+
+    .ai-action-btn {
+        width: 100%;
+        justify-content: center;
+    }
+
+    .gallery {
+        grid-template-columns: repeat(3, 1fr);
+    }
+
+    .user-management {
+        grid-template-columns: 1fr;
+    }
+
+    /* إخفاء بعض العناصر في الهواتف */
+    .app-subtitle {
+        font-size: var(--font-size-sm);
+    }
+
+    .login-info .credentials p {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: var(--space-xs);
+    }
+
+    .features-list {
+        display: none;
+    }
+}
+
+/* شاشات قصيرة جداً */
+@media (max-height: 600px) {
+    .login-container {
+        padding: var(--space-md);
+        align-items: flex-start;
+    }
+
+    .login-form {
+        margin-top: var(--space-md);
+    }
+
+    .features-list {
+        display: none;
+    }
+}
+
+/* دعم اللمس */
+@media (hover: none) and (pointer: coarse) {
+    .tab {
+        padding: var(--space-lg) var(--space-xl);
+        min-height: 44px; /* الحد الأدنى للمساحة القابلة للنقر */
+    }
+
+    .btn {
+        min-height: 44px;
+        padding: var(--space-lg) var(--space-xl);
+    }
+
+    .post-action {
+        min-height: 44px;
+        padding: var(--space-sm);
+    }
+
+    .poll-option {
+        min-height: 44px;
+        padding: var(--space-lg);
+    }
+
+    /* تحسينات للتفاعل باللمس */
+    .tool-card:active,
+    .btn:active {
+        transform: scale(0.98);
+    }
+
+    .writing-area {
+        font-size: 16px; /* منع التكبير في iOS */
+    }
+}
+
+/* الوضع الداكن الفاتح (إضافي) */
+@media (prefers-color-scheme: light) {
+    :root {
+        --bg: #ffffff;
+        --bg-light: #f8fafc;
+        --bg-lighter: #f1f5f9;
+        --card: #ffffff;
+        --text: #1e293b;
+        --text-light: #475569;
+        --text-lighter: #94a3b8;
+        --border: #e2e8f0;
+        --border-light: #cbd5e1;
+    }
+
+    .login-container {
+        background: linear-gradient(135deg, #a855f7, #06b6d4);
+    }
+
+    .login-form {
+        background: var(--card);
+        box-shadow: 0 20px 40px rgba(0,0,0,0.1);
+    }
+
+    .form-group input,
+    .form-group textarea,
+    .form-group select {
+        background: var(--bg-light);
+        border-color: var(--border);
+    }
+
+    .form-group input:focus,
+    .form-group textarea:focus,
+    .form-group select:focus {
+        background: var(--bg-lighter);
+    }
+}
+
+/* الطباعة */
+@media print {
+    .header,
+    .tabs-container,
+    .sidebar-section,
+    .btn,
+    .post-actions,
+    .ai-assistant,
+    .writing-tools {
+        display: none !important;
+    }
+
+    .main-content {
+        grid-template-columns: 1fr;
+        margin: 0;
+        padding: 0;
+    }
+
+    .card {
+        box-shadow: none;
+        border: 1px solid #ccc;
+        margin: 0 0 20px 0;
+    }
+
+    body {
+        background: white;
+        color: black;
+        font-size: 12pt;
+    }
+
+    .writing-area {
+        border: none;
+        background: white;
+        min-height: auto;
+    }
+}
+
+/* تحسينات للأجهزة القابلة للطي */
+@media (max-width: 360px) {
+    .login-form {
+        padding: var(--space-md);
+    }
+
+    .app-title {
+        font-size: var(--font-size-lg);
+    }
+
+    .tab {
+        padding: var(--space-sm) var(--space-md);
+        font-size: var(--font-size-xs);
+    }
+
+    .card {
+        padding: var(--space-sm);
+    }
+
+    .gallery {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+/* دعم الشاشات عالية الدقة */
+@media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
+    .logo,
+    .tool-icon,
+    .post-action i,
+    .tab i {
+        -webkit-font-smoothing: antialiased;
+        -moz-osx-font-smoothing: grayscale;
+    }
+}
+
+/* تحسينات للقراءة */
+@media (prefers-reduced-motion: reduce) {
+    * {
+        animation-duration: 0.01ms !important;
+        animation-iteration-count: 1 !important;
+        transition-duration: 0.01ms !important;
+    }
+
+    .btn::before {
+        display: none;
+    }
+}
+
+/* تحسينات للنصوص الكبيرة */
+@media (prefers-contrast: high) {
+    :root {
+        --primary: #000000;
+        --text: #000000;
+        --border: #000000;
+    }
+
+    .btn-primary {
+        background: #000000;
+        color: #ffffff;
+        border: 2px solid #000000;
+    }
+}
+
+/* دعم اليمين إلى اليسار (RTL) */
+[dir="rtl"] {
+    .writing-stats {
+        text-align: right;
+    }
+
+    .poll-option {
+        flex-direction: row-reverse;
+    }
+
+    .post-header {
+        text-align: right;
+    }
+
+    .form-group {
+        text-align: right;
+    }
+
+    .toast-container {
+        right: auto;
+        left: var(--space-lg);
+    }
+
+    @keyframes slideInRight {
+        from {
+            transform: translateX(-100%);
+            opacity: 0;
+        }
+        to {
+            transform: translateX(0);
+            opacity: 1;
+        }
+    }
+
+    @keyframes slideOutRight {
+        from {
+            transform: translateX(0);
+            opacity: 1;
+        }
+        to {
+            transform: translateX(-100%);
+            opacity: 0;
+        }
+    }
+}

@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>كُتّاب - المنصة المجانية للكتاب والمؤلفين</title>
+    
+    <!-- التنسيقات -->
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/responsive.css">
+    
+    <!-- الأيقونات -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <!-- PWA -->
+    <link rel="manifest" href="manifest.json">
+    <meta name="theme-color" content="#7e22ce">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="default">
+    
+    <!-- SEO -->
+    <meta name="description" content="منصة كُتّاب المجانية للكتاب والمؤلفين العرب - اكتب، انشر، وتواصل مع مجتمع الكتاب">
+    <meta name="keywords" content="كتابة, مؤلفين, أدب, قصص, شعر, منصة عربية">
+</head>
+<body>
+    <!-- صفحة تسجيل الدخول -->
+    <div id="loginPage" class="login-container">
+        <div class="login-form">
+            <h1 class="app-title">
+                <i class="fas fa-pen-fancy"></i>
+                كُتّاب - المنصة المجانية
+            </h1>
+            <p class="app-subtitle">منصة متكاملة للكتاب والمؤلفين - مجانية بالكامل</p>
+            
+            <div class="login-info">
+                <h3><i class="fas fa-info-circle"></i> بيانات الدخول التجريبية:</h3>
+                <div class="credentials">
+                    <p><strong>اسم المستخدم:</strong> كاتب / مشرف</p>
+                    <p><strong>كلمة المرور:</strong> 1234</p>
+                </div>
+            </div>
+            
+            <form id="loginForm" onsubmit="handleLogin(event)">
+                <div class="form-group">
+                    <label for="loginUsername">
+                        <i class="fas fa-user"></i>
+                        اسم المستخدم
+                    </label>
+                    <input type="text" id="loginUsername" placeholder="أدخل اسم المستخدم" value="كاتب" required>
+                </div>
+                
+                <div class="form-group">
+                    <label for="loginPassword">
+                        <i class="fas fa-lock"></i>
+                        كلمة المرور
+                    </label>
+                    <input type="password" id="loginPassword" placeholder="أدخل كلمة المرور" value="1234" required>
+                </div>
+                
+                <button type="submit" class="btn btn-primary btn-large">
+                    <i class="fas fa-sign-in-alt"></i>
+                    تسجيل الدخول
+                </button>
+            </form>
+            
+            <div class="features-list">
+                <div class="feature-item">
+                    <i class="fas fa-check"></i>
+                    منصة مجانية بالكامل
+                </div>
+                <div class="feature-item">
+                    <i class="fas fa-check"></i>
+                    نظام تواصل اجتماعي متكامل
+                </div>
+                <div class="feature-item">
+                    <i class="fas fa-check"></i>
+                    حماية حقوق النشر
+                </div>
+                <div class="feature-item">
+                    <i class="fas fa-check"></i>
+                    جميع الميزات متاحة
+                </div>
+            </div>
+            
+            <div class="register-link">
+                <p>ليس لديك حساب؟ <a href="#" onclick="showRegister()">سجل الآن</a></p>
+            </div>
+        </div>
+    </div>
+
+    <!-- التطبيق الرئيسي -->
+    <div id="app" class="app" style="display: none;">
+        <!-- سيتم تحميل المحتوى ديناميكياً -->
+    </div>
+
+    <!-- نافذة التحميل -->
+    <div id="loading" class="loading-container" style="display: none;">
+        <div class="loading-spinner">
+            <i class="fas fa-pen-fancy fa-spin"></i>
+        </div>
+        <p>جاري التحميل...</p>
+    </div>
+
+    <!-- الإشعارات -->
+    <div id="toastContainer" class="toast-container"></div>
+
+    <!-- JavaScript -->
+    <script src="js/storage.js"></script>
+    <script src="js/auth.js"></script>
+    <script src="js/social.js"></script>
+    <script src="js/admin.js"></script>
+    <script src="js/app.js"></script>
+</body>
+</html>
